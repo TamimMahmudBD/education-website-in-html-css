@@ -32,7 +32,7 @@ h1{
     margin: 15px 0px;
 }
 .common-btn{
-    padding: 18px 14px;
+    padding: 14px 18px;
     background: transparent;
     outline: none;
     border: 2px solid #f67c92;
@@ -95,37 +95,34 @@ nav ul li a{
     z-index: 2;
     cursor: pointer;
 }
-
-
 /* ------about------- */
-#about{
+#about, #offer{
     padding: 100px 0;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
 }
-.about-left-col{
+.about-left-col, .offer-left-col{
     flex-basis: 50%;
 }
-.about-left-col img{
+.about-left-col img, .offer-left-col img {
     width: 100%;
 }
-.about-right-col{
+.about-right-col, .offer-right-col{
     flex-basis: 50%;
     text-align: right;
 }
-.about-text{
+.about-text, .offer-text{
     max-width: 500px;
     margin-right: 100px;
     display: inline-block;
 }
-
-.about-text h2{
+.about-text h2, .offer-text h2{
     margin: 50px 0 10px;
     font-size: 28px;
     font-style: italic;
 }
-.about-text h3{
+.about-text h3, .offer-text h3{
     font-size: 20px;
     font-style: italic;
     color: #777;
@@ -148,8 +145,16 @@ nav ul li a{
     flex-basis: 25%;
     text-align: center;
 }
+.feature-col img{
+    width: 100px;
+}
+.feature-col h4{
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 400;
+}
 .feature-btn{
-    margin: 50px auto 0;
+    margin: 80px auto 0;
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -159,8 +164,8 @@ nav ul li a{
     display: inline-block;
     margin-right: 25px;
 }
-/* ------course---- */
-#courses{
+/* ----courses----- */
+.courses{
     padding: 100px 0;
 }
 .course-row{
@@ -179,4 +184,110 @@ nav ul li a{
 }
 .course-text{
     max-width: 350px;
+}
+.course-text button{
+    margin: 30px 0;
+}
+/* -----offer------ */
+#offer button{
+    margin: 30px 0;
+}
+/* -----contact------ */
+.contact-row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contact-left-col, .contact-right-col{
+    flex-basis: 50%;
+}
+.contact-right-col img{
+    width: 100%;
+}
+form{
+    max-width: 350px;
+    margin: 30px 0;
+}
+form input{
+    width: 100%;
+    padding: 12px 10px;
+    margin-bottom: 5px;
+    outline: none;
+    box-shadow: none;
+    box-sizing: border-box;
+    border: 2px solid #f67c92;
+}
+.btn-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.btn-box button{
+    flex-basis: 48%;
+    padding: 18px 0;
+}
+/* -----footer------- */
+#footer{
+    padding: 50px 0 30px;
+}
+hr{
+    width: 100%;
+    border: 0;
+    border-top: 1px solid #f67c92;
+}
+.footer-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-left-col{
+    margin-top: 60px;
+    flex-basis: 60%;
+}
+.footer-right-col{
+    flex-basis: 30%;
+
+}
+.footer-links{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.link-title h4{
+    color:#f67c92;
+    margin-bottom: 20px;
+}
+.link-title small{
+    font-style: 13px;
+    color: #777;
+}
+.footer-info{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-logo img{
+    width: 100px;
+}
+.lan-btn button{
+    padding: 8px 15px;
+    margin-top: 10px;
+    font-size: 10px;
+}
+/* -----solical---- */
+.socila-icons{
+    width: 50px;
+    position: fixed;
+    top: 35%;
+    left: 27px;
+    transform: translate(-50%);
+    z-index: 1;
+}
+.socila-icons img{
+    display: block;
+    width: 20px;
+    margin: 0 auto 20px;
+    cursor: pointer;
 }
