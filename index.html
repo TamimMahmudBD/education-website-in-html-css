@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Education Website | HTML and CSS</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
 </head>
 
 <body>
@@ -30,12 +32,11 @@
     </section>
     <nav id="sidenav">
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Offer</a></li>
-            <li><a href="#">Courses</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#feature">Feature</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
     <img src="images/menu.png" id="menubtn">
@@ -200,7 +201,7 @@
                 <div class="footer-info">
                     <div class="copyright-text">
                         <small>tamimpc21@gmail.com</small> <br>
-                        <small>copyright 2022 Xypo</small>
+                        <small>&copy; Copyright 2022 Xypo</small>
                     </div>
                     <div class="footer-logo">
                         <img src="images/logo.png">
@@ -235,7 +236,10 @@
                sidenav.style.right = "-250px";
            }
        }
-
+       var scroll = new SmoothScroll('a[href*="#"]', {
+           speed: 1000,
+           speedAsDuration:true
+       });
     </script>
 </body>
 
